@@ -1,0 +1,65 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.  
+  
+# compiled output  
+angularf/dist  
+angularf/tmp  
+angularf/out-tsc  
+  
+# dependencies  
+/angularf/node_modules  
+/angularf/.angular
+  
+# IDEs and editors  
+angularf/.idea  
+angularf/.project  
+angularf/.classpath  
+angularf/.c9/  
+angularf/*.launch  
+angularf/.settings/  
+angularf/*.sublime-workspace  
+  
+# IDE - VSCode  
+angularf/.vscode/*  
+angularf/!.vscode/settings.json  
+angularf/!.vscode/tasks.json  
+angularf/!.vscode/launch.json  
+angularf/!.vscode/extensions.json  
+  
+# misc  
+angularf/.sass-cache  
+angularf/connect.lock  
+angularf/coverage  
+angularf/libpeerconnection.log  
+angularf/npm-debug.log  
+angularf/yarn-error.log  
+angularf/testem.log  
+angularf/typings  
+  
+# System Files  
+angularf/.DS_Store  
+angularf/Thumbs.db  
+
+
+/laravel/vendor/
+laravel/node_modules/
+laravel/npm-debug.log
+laravel/yarn-error.log
+
+# Laravel 4 specific
+laravel/bootstrap/compiled.php
+laravel/app/storage/
+
+# Laravel 5 & Lumen specific
+laravel/public/storage
+laravel/public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+laravel/public_html/storage
+laravel/public_html/hot
+
+laravel/storage/*.key
+laravel/.env
+laravel/Homestead.yaml
+laravel/Homestead.json
+/laravel/.vagrant
+laravel/.phpunit.result.cache

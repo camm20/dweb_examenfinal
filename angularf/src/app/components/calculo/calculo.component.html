@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center" style="padding: 20px 0;">
+    <div class="card w-50 border-secondary text-center">
+        <div class="card-header">
+            CALCULO VELOCIDAD INICIAL
+        </div>
+        <div class="card-body">
+
+            <form #loginForm="ngForm" (ngSubmit)="submitCalc()">
+                <p class="card-text">
+                    Vi = Vf - at
+                </p>
+
+                <h5 class="card-title">
+                    Vf (s)
+                </h5>
+                <input type="number" name="velocidadFinal" id="velocidadFinal" [(ngModel)]="form.vf" required>
+                <h5 class="card-title">
+                    a (m/s²)
+                </h5>
+                <input type="number" name="aceleracion" id="aceleracion" [(ngModel)]="form.a" required>
+                <h5 class="card-title">
+                    t (s)
+                </h5>
+                <input type="number" name="tiempo" id="tiempo" [(ngModel)]="form.t" required>
+                <p class="card-text">
+
+                </p>
+                <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Calcular</button>
+            </form>
+        </div>
+
+
+        <div class="card-footer text-muted">
+            Resultado Vi: <strong>{{calcResp}}</strong>
+        </div>
+    </div>
+</div>
